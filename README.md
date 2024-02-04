@@ -1,27 +1,37 @@
-# NgxSkeletonLoader
+## [ngx-skeleton-loader](https://www.npmjs.com/package/ngx-skeleton-loader)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+This component is made in a transparent and easier way. Which is integrate skeleton-loader with additional tooling process. 
 
-## Development server
+- Server-side rendering.
+- Progressive rendering.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Quite easy to be integrated in order to improve the user experience 🎉
 
-## Code scaffolding
+### Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`npm install ngx-skeleton-loader --save`
 
-## Build
+It is mandatory to add NgxSkeletonLoaderModule to your standalone component. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To make `<ngx-skeleton-loader>` into components in your application.
 
-## Running unit tests
+. . . </br>
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader'; </br>
+. . .
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![image](https://github.com/JoseMMorales/NgRx-Posts/assets/43299285/23d24650-8777-4a82-b3c4-c9b1434d2825)
 
-## Running end-to-end tests
+### Theming
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+You can define different styles for the skeleton loader by passing an object with the css styles - in dashed case - into the component via [theme] attribute.
 
-## Further help
+![image](https://github.com/JoseMMorales/NgRx-Posts/assets/43299285/fb426945-52cf-436f-91f6-11d702e73dd6)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Overwriting Styles
+
+By using :host and ::ng-deep styles can be overwritten in skeleton-loader.
+
+![image](https://github.com/JoseMMorales/Angular-17SSR/assets/43299285/ad7159a7-c649-4085-917a-a8a0b787f12e)
+
+### Author
+JoseMMorales
